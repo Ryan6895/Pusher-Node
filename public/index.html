@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+  <title>Pusher Test</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <!-- <script src="https://js.pusher.com/4.1/pusher.min.js"></script>
+  <script>
+
+    // Enable pusher logging - don't include this in production
+    Pusher.logToConsole = true;
+
+    var pusher = new Pusher('64e1d0df0ec2ef039ee3', {
+      cluster: 'us2',
+      encrypted: true
+    });
+
+    var channel = pusher.subscribe('my-channel');
+    channel.bind('my-event', function(data) {
+      alert(data.message);
+    });
+  </script> -->
+
+  <body>
+    <h1>OS Vote</h1>
+    <p>Vote for your favorite OS to develop on</p>
+    <form id="vote-form" action="index.html" method="post">
+      <p>
+        <input type="radio" name="OS" value="Windows" id="windows">
+        <label for="windows">Windows</label>
+      </p>
+      <p>
+        <input type="radio" name="OS" value="macos" id="MacOS">
+        <label for="macos">MacOS</label>
+      </p>
+      <p>
+        <input type="radio" name="OS" value="Linux" id="linux">
+        <label for="linux">Linux Distro</label>
+      </p>
+      <p>
+        <input type="radio" name="OS" value="Other" id="other">
+        <label for="other">Something Else</label>
+      </p>
+      <input type="submit" class="btn" value="Vote">
+    </form>
+    <br><br>
+
+    <div id="chartContainer" styles="height: 300px; width:100%">
+
+    </div>
+
+    <script
+    src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pusher/4.2.2/pusher.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</head>

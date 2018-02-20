@@ -1,0 +1,29 @@
+{
+  "name": "pusher-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ryan6895/Pusher-Node.git"
+  },
+  "author": "ryan clark",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ryan6895/Pusher-Node/issues"
+  },
+  "homepage": "https://github.com/Ryan6895/Pusher-Node#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.6"
+  },
+  "devDependencies": {
+    "nodemon": "^1.15.1"
+  }
+}
